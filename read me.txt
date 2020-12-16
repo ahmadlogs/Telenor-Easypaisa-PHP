@@ -1,0 +1,29 @@
+installation instructions: Telenor Easypay Easypaisa payment gateway:
+
+1. Extract downloaded zip file and extract it
+
+2. XAMPP: copy "easypay" folder in C:\xampp\htdocs
+   WAMP:  copy "easypay" folder in C:\wamp\www\
+
+3. Import easypaisa_db.sql to your mysql
+
+4. Set hostname, username and password in include/config.php
+
+5. Set domain name in include/config.php - 
+   BASE_URL - 'http://yourdomain.com'; or 
+   BASE_URL - 'http://localhost/easypay';
+
+6. Set easypay credentials in include/config.php
+   i.e. STORE_ID, HASH_KEY etc.
+
+7. open the following link in your web browser
+   http://localhost/easypay/
+
+8. Opss I forgot for last step... ENJOY! ;)
+
+
+Need any Help?
+Follow me on
+Facebook: facebook.com/ahmadlogs 
+twitter : twitter.com/ahmadlogs
+youtube : https://www.youtube.com/channel/UCOXYfOHgu-C-UfGyDcu5sYw

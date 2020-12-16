@@ -1,0 +1,134 @@
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.header-bg-dark{
+    background-color: #273E4A!important;
+}
+.showcase .container {
+  min-height: 350px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.padall {
+  padding: 3px;
+}
+footer.footer {  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer-bg-dark {
+    background-color: #263E4A!important;
+}
+.list-inline {
+ list-style-type: none;
+}
+
+.list-inline-item a {
+    color:#FFFFFF;
+}
+padding-bottom: 1rem;
+}
+
+
+
+#event-calendar table {
+    width: 100%;
+  }
+  
+  #event-calendar table tr th {
+      border: 1px solid #ddd;
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      color: gray;
+      font-size: 14px;
+      font-weight: 400;
+  }
+#event-calendar table tr td {
+    border: 1px solid #ddd;
+    width: 80px;
+    text-align: center;
+}
+#event-calendar .calendar tr td:last-child>a {
+    color: #C4C4C4;
+}
+#event-calendar .calendar td>a {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 300;
+}
+#event-calendar .calendar td div.highlight {
+    background-color: #EEEEEE;
+    color: red;
+    width: 100%;
+    left: 0;
+    right: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    z-index: 0;
+}
+#event-calendar .calendar td {
+    position: relative;
+}
+#event-calendar table tr td {
+    height: 90px;
+}
+
