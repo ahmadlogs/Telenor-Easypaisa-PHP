@@ -74,14 +74,25 @@ $_SESSION['post_data'] = $post_data;
 //$sorted_string
 //make an alphabetically ordered string using $post_data array above
 //and skip the blank fields in $post_data array
-$sorted_string  = "amount=" 		. $post_data['amount'] 		 . '&';
-$sorted_string .= "autoRedirect=" 	. $post_data['autoRedirect'] . '&';
-$sorted_string .= "expiryDate="  	. $post_data['expiryDate'] 	 . '&';
-$sorted_string .= "orderRefNum=" 	. $post_data['orderRefNum']  . '&';
-$sorted_string .= "paymentMethod" 	. $post_data['paymentMethod']. '&';
-$sorted_string .= "postBackURL" 	. $post_data['postBackURL']  . '&';
-$sorted_string .= "storeId" 		. $post_data['storeId'] 	 . '&';
+$sortedArray = $post_data;
+ksort($sortedArray);
+$sorted_string = '';
+$i = 1;
 
+foreach($sortedArray as $key => $value){
+	if(!empty($value))
+	{
+		if($i == 1)
+		{
+			$sorted_string = $key. '=' .$value;
+		}
+		else
+		{
+			$sorted_string = $sorted_string . '&' . $key. '=' .$value;
+		}
+	}
+	$i++;
+}	
 // AES/ECB/PKCS5Padding algorithm
 $cipher = "aes-128-ecb";
 $crypttext = openssl_encrypt($sorted_string, $cipher, HASH_KEY, OPENSSL_RAW_DATA);
